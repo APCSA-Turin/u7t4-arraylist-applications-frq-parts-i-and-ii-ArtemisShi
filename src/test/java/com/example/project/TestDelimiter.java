@@ -43,7 +43,7 @@ public class TestDelimiter {
         String[] tokens4 = {"<sup>", "</sup>", "</sup>", "<sup>"};
         ArrayList<String> delList2 = delimitersEx3.getDelimitersList(tokens4);
         boolean res2 = delimitersEx3.isBalanced(delList2);
-        assertEquals(res2,true);
+        assertEquals(res2,false);
 
         String[] tokens5 = {"</sup>"};
         ArrayList<String> delList3 = delimitersEx3.getDelimitersList(tokens5);

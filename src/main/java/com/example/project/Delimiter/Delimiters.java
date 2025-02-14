@@ -64,6 +64,9 @@ public class Delimiters {
 
             
             }
+            if(close>open){
+                return false;
+            }
         }}}
         if(close==open){
             return true;
